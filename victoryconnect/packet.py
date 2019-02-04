@@ -25,7 +25,7 @@ class Packet:
 
     def __str__ (self):
       
-        return str(0)+ " " + self.path + " {" + ';'.join(str(x) for x in self.data) + "}~";
+        return str(0)+ " " + self.path + " {" + ';'.join(str(x) for x in self.data) + "}~"
 
 def parse(self, raw):
     raw  = ""
