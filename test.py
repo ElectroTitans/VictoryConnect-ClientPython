@@ -1,10 +1,8 @@
-from victoryconnect.packet import Packet
-from victoryconnect.packet import PacketType
+from victoryconnect.tcp_connection import TCPConnection
 
-test_packet = Packet(PacketType.SUBMIT, "test/packet", [0,0,0,0])
-print(test_packet.path)
+con = TCPConnection("127.0.0.1",5000,None)
 
-test_packet.set_raw("TADAdasdasd")
-print(test_packet.data)
+con.connect()
 
-print(str(test_packet))
+while True:
+    pass
